@@ -1,3 +1,3 @@
-const { repeater } = require('./src/extended-repeater');
+const { sortByHeight } = require('./src/sort-by-height');
 
-console.log(repeater('la', { repeatTimes: 3 }));
+console.log(sortByHeight([11, 16, 2, 2, 4, 9]));
