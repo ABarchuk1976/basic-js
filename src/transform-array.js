@@ -40,14 +40,14 @@ function transform(arr) {
       prev = item;
       return;
     }
-    if (item === DP) {
+    if (item === DP && prev) {
       transformedArr.push(prev);
       return;
     }
     if (item === DN) {
       next = true;
     }
-    if (item === DIP) {
+    if (item === DIP && prev) {
       transformedArr.pop();
       prev = transformedArr[transformedArr.length - 1];
     }

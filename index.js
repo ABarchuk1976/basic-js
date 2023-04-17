@@ -1,3 +1,5 @@
-const { sortByHeight } = require('./src/sort-by-height');
+const { VigenereCipheringMachine } = require('./src/vigenere-cipher');
 
-console.log(sortByHeight([11, 16, 2, 2, 4, 9]));
+const encoded = new VigenereCipheringMachine();
+
+console.log(encoded.decrypt('AEIHQX SX DLLU!', 'alphonse'));
